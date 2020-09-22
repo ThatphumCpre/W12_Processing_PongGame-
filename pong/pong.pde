@@ -6,13 +6,14 @@ void draw() {
  }
 
 class Ball {
-    int positionX,positionY;
+    int positionX,positionY,size,speedX,speedY;
 
     Ball(){
         positionX = width/2;
         positionY = height/2;
     }
     void drawBall(){}   //draw Ball
+    void move(){}
     int getPositionX(){return 0;}  //get,set method
     int getPositionY(){return 0;}
     void setPositionX(int x){} //set x,y for bounce
