@@ -6,7 +6,7 @@ void draw() {
  }
 
 class Ball {
-    private int positionX,positionY;
+    int positionX,positionY;
 
     Ball(){
         positionX = width/2;
@@ -15,18 +15,19 @@ class Ball {
     void drawBall(){}   //draw Ball
     int getPositionX(){}  //get,set method
     int getPositionY(){}
-    void setPositionX(){} //set x,y for bounce
-    void setPositionY(){}
+    void setPositionX(int x){} //set x,y for bounce
+    void setPositionY(int y){}
  }
 
 class Paddle {
     int positionY,positionY;
     Ball objectBall;
+
     Paddle(Ball bounceBall){}
     void bounce(){}       // bounce the ball if it's hit
     void drawPaddle(){}   // draw Paddle
     int getPositionY(){}  //get,set method
-    void setPositionX(){}
+    void setPositionY(int y){}
 }
 
 class PongGame
@@ -36,5 +37,5 @@ class PongGame
     PongGame(){} //create ball n player
     void drawPongGame(){}  //draw PongGame
     void update(){}  //check score and move ball
-    void serveBall(){}
-}|
+    void serveBall(){} //use to serve ball
+}
